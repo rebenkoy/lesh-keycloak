@@ -16,5 +16,7 @@ services:
       - secrets.env
     networks:
       - keycloak
+    depends_on:
+      - postgres
     labels:
       org.labels-schema.group: "iam"
